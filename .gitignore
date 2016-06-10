@@ -1,0 +1,8 @@
+*.un~
+bundle/*
+node_modules
+npm-debug.log
+.DS_Store
+.idea
+*.bundle.js
+releases
