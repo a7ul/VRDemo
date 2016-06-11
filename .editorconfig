@@ -9,11 +9,11 @@
 -
 -[*.{json,js,jsx,html,css}]
 -indent_style = space
--indent_size = 2
+-indent_size = 1
 -
 -[.eslintrc]
 -indent_style = space
--indent_size = 2
+-indent_size = 1
 -
 -[*.md]
 -trim_trailing_whitespace = false

@@ -1,4 +1,4 @@
-Instructions to start of a kickass pure react webpack project
+Instructions to start:
 
 0. Clone the repo
 
