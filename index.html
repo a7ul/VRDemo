@@ -3,13 +3,31 @@
 
 <head>
     <meta charset="utf-8">
-    <title>VR Realestate</title>
+    <title>VR Demo</title>
+    <script src="./js/lib/aframe.js"></script>
+    <script src="./js/lib/aframe-text-component.min.js"></script>
+    <script src="./js/lib/jquery-3.0.0.min.js"></script>
 </head>
 
 <body>
-    <div id="root">
-    </div>
-    <script src="./bundle/bundle.js"></script>
+    <a-scene>
+        <a-assets>
+            <img id="menu-bg" src="./assets/menu-photosphere.jpg">
+        </a-assets>
+
+        <a-entity id="house-1" material="color:orange" geometry="primitive:box;height:2.5;width:2.5;depth:0.1" position="8 8 8" rotation="0 60 0"></a-entity>
+        <a-entity id="house-2" material="color:blue" geometry="primitive:box;height:5.5;width:5.5;depth:0.1" position="20 25 -5" rotation="0 70 5 "></a-entity>
+        <a-entity id="house-3" material="color:green" geometry="primitive:box;height:5.5;width:5.5;depth:0.1" position="-33 21 -6" rotation="0 80 0 "></a-entity>
+
+        <a-entity id="house-1-text" text="text: Photosphere house" material="color:purple" position="10 11 6" scale="1.5 1.5 1" rotation="30 -120 0"></a-entity>
+        <a-entity id="house-3-text" text="text: 3D Model house" material="color:purple" position="-40 31 0" scale="3 3 1" rotation="0 80 0"></a-entity>
+
+        <a-camera id="camera" position="0 0 0">
+            <a-cursor color="#2E3A87" fuse=true geometry="primitive: ring;radius-inner:0.02;radius-outer:0.04">
+        </a-camera>
+        <a-sky src="#menu-bg"></a-sky>
+    </a-scene>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

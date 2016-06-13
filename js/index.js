@@ -1,0 +1,9 @@
+$('#house-1').click(()=>{
+  console.log('clicked1');
+});
+$('#house-2').click(()=>{
+  console.log('clicked2');
+});
+$('#house-3').click(()=>{
+  console.log('clicked3');
+});
