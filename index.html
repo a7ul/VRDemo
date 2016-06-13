@@ -13,20 +13,32 @@
     <a-scene>
         <a-assets>
             <img id="menu-bg" src="./assets/menu-photosphere.jpg">
+            <img id="house-bg" src="./assets/house-photosphere.png">
         </a-assets>
 
-        <a-entity id="house-1" material="color:orange" geometry="primitive:box;height:2.5;width:2.5;depth:0.1" position="8 8 8" rotation="0 60 0"></a-entity>
-        <a-entity id="house-2" material="color:blue" geometry="primitive:box;height:5.5;width:5.5;depth:0.1" position="20 25 -5" rotation="0 70 5 "></a-entity>
-        <a-entity id="house-3" material="color:green" geometry="primitive:box;height:5.5;width:5.5;depth:0.1" position="-33 21 -6" rotation="0 80 0 "></a-entity>
+        <a-entity id="menu">
+            <a-entity id="house-1" material="color:orange" geometry="primitive:box;height:2.5;width:2.5;depth:0.1" position="8 8 8" rotation="0 60 0"></a-entity>
+            <a-entity id="house-2" material="color:blue" geometry="primitive:box;height:5.5;width:5.5;depth:0.1" position="20 25 -5" rotation="0 70 5 "></a-entity>
+            <a-entity id="house-3" material="color:green" geometry="primitive:box;height:5.5;width:5.5;depth:0.1" position="-33 21 -6" rotation="0 80 0 "></a-entity>
 
-        <a-entity id="house-1-text" text="text: Photosphere house" material="color:purple" position="10 11 6" scale="1.5 1.5 1" rotation="30 -120 0"></a-entity>
-        <a-entity id="house-3-text" text="text: 3D Model house" material="color:purple" position="-40 31 0" scale="3 3 1" rotation="0 80 0"></a-entity>
+            <a-entity id="house-1-text" text="text: Photosphere house" material="color:purple" position="10 11 6" scale="1.5 1.5 1" rotation="30 -120 0"></a-entity>
+            <a-entity id="house-3-text" text="text: 3D Model house" material="color:purple" position="-40 31 0" scale="3 3 1" rotation="0 80 0"></a-entity>
+        </a-entity>
+
+        <a-entity id="photosphere-house">
+            <a-entity id="photosphere-back-button" position="0 3 0">
+                <a-ring color="white" radius-inner="0.001" radius-outer="0.5" rotation="90 0 0" position="0 2 0"></a-ring>
+                <a-entity text="text: < Back ;size:0.2;" material="color: #66E1B4" position="-0.35 1.9 0" rotation="90 0 0" scale="0.7 0.7 1"></a-entity>
+            </a-entity>
+        </a-entity>
 
         <a-camera id="camera" position="0 0 0">
             <a-cursor color="#2E3A87" fuse=true geometry="primitive: ring;radius-inner:0.02;radius-outer:0.04">
         </a-camera>
-        <a-sky src="#menu-bg"></a-sky>
+
+        <a-sky id="sky" src="#menu-bg"></a-sky>
     </a-scene>
+
     <script src="./js/index.js"></script>
 </body>
 
