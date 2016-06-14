@@ -7,6 +7,7 @@
     <script src="./js/lib/aframe.js"></script>
     <script src="./js/lib/aframe-text-component.min.js"></script>
     <script src="./js/lib/jquery-3.0.0.min.js"></script>
+    <script src="./js/lib/aframe-extras.js"></script>
 </head>
 
 <body>
@@ -14,6 +15,9 @@
         <a-assets>
             <img id="menu-bg" src="./assets/menu-photosphere.jpg">
             <img id="house-bg" src="./assets/house-photosphere.png">
+            <a-asset-item id="house-obj" src="./assets/house.obj"></a-asset-item>
+            <a-asset-item id="house-mtl" src="./assets/house.mtl"></a-asset-item>
+            <!-- <a-entity id="3d-bg" material="color:black"></a-entity> -->
         </a-assets>
 
         <a-entity id="menu">
@@ -32,10 +36,28 @@
             </a-entity>
         </a-entity>
 
+        <a-entity id="3d-house">
+            <a-entity id="3d-house-back-button"  position="0 0 -1">
+                <a-ring color="white" radius-inner="0.001" radius-outer="0.5" rotation="90 0 0" position="0 2 0"></a-ring>
+                <a-entity text="text: < Back ;size:0.2;" material="color: #66E1B4" position="-0.35 1.9 0" rotation="90 0 0" scale="0.7 0.7 1"></a-entity>
+            </a-entity>
+            <!-- <a-entity three-model="loader: json;
+                             animation: default;
+                             src: url(./assets/housefin.json);">
+            </a-entity> -->
+            <a-entity obj-model="obj: #house-obj; mtl: #house-mtl"></a-entity>
+            <a-entity geometry="primitive:box;height:100;depth:0.1;width:100" material="color:rgb(116, 99, 96)" position="-2 -3 -1" rotation="90 0 0"></a-entity>
+        </a-entity>
+
         <a-camera id="camera" position="0 0 0">
             <a-cursor color="#2E3A87" fuse=true geometry="primitive: ring;radius-inner:0.02;radius-outer:0.04">
         </a-camera>
 
+        <a-entity layout="type: circle; margin: 30">
+            <a-entity light="type: point; color: #EEE; intensity:0.2"></a-entity>
+            <a-entity light="type: point; color: #EEE; intensity:0.2"></a-entity>
+        </a-entity>
+        <a-light type="ambient" color="#444"></a-light>
         <a-sky id="sky" src="#menu-bg"></a-sky>
     </a-scene>
 
