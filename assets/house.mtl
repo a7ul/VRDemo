@@ -109,6 +109,16 @@ Ni 1.000000
 d 1.000000
 illum 2
 
+newmtl Material.009
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /C:/Users/aleckmunhapa/Desktop/New folder/50_pounds.jpg
+
 newmtl Material.012
 Ns 96.078431
 Ka 0.000000 0.000000 0.000000
@@ -180,6 +190,15 @@ Ni 1.000000
 d 1.000000
 illum 2
 
+newmtl TV
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.483053 0.088852 0.119639
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /C:/Users/aleckmunhapa/Desktop/New folder/Nature-Art-Wallpaper1.jpg
 
 newmtl WALL
 Ns 96.078431
@@ -235,6 +254,16 @@ Ni 1.000000
 d 1.000000
 illum 3
 
+newmtl host
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.166333 0.166333 0.166333
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /C:/Users/aleckmunhapa/Desktop/New folder/pool_view_001.jpg
+
 newmtl kit
 Ns 96.078431
 Ka 0.000000 0.000000 0.000000
@@ -271,6 +300,26 @@ Ni 1.000000
 d 1.000000
 illum 5
 
+newmtl paper
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /C:/Users/aleckmunhapa/Desktop/New folder/ContractSCSD.jpg
+
+newmtl paper_NONE
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /C:/Users/aleckmunhapa/Desktop/New folder/ContractSCSD.jpg
+
 newmtl pillow
 Ns 96.078431
 Ka 0.000000 0.000000 0.000000
@@ -288,6 +337,36 @@ Ks 0.500000 0.500000 0.500000
 Ni 1.000000
 d 1.000000
 illum 2
+
+newmtl potrait_Nature-Art-Wallpaper1
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.695145 0.554435
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /C:/Users/aleckmunhapa/Desktop/New folder/Nature-Art-Wallpaper1.jpg
+
+newmtl potrait_ballroomdancers.jpg
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.695145 0.554435
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /C:/Users/aleckmunhapa/Desktop/New folder/ballroomdancers.jpg
+
+newmtl potrait_fire_art_13.jpg
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.695145 0.554435
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /C:/Users/aleckmunhapa/Desktop/New folder/fire_art_13.jpg
 
 newmtl stove
 Ns 96.078431
@@ -307,6 +386,15 @@ Ni 1.000000
 d 1.000000
 illum 2
 
+newmtl wall_bedroom_normal_ceramic_tiles_
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.658229 0.566701 0.416797
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /C:/Users/aleckmunhapa/Desktop/New folder/normal_ceramic_tiles_w_flowers_thumbnail1.jpg
 
 newmtl whiot
 Ns -0.000015

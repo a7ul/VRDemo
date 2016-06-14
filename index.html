@@ -22,7 +22,7 @@
 
         <a-entity id="menu">
             <a-entity id="house-1" material="color:orange" geometry="primitive:box;height:2.5;width:2.5;depth:0.1" position="8 8 8" rotation="0 60 0"></a-entity>
-            <a-entity id="house-2" material="color:blue" geometry="primitive:box;height:5.5;width:5.5;depth:0.1" position="20 25 -5" rotation="0 70 5 "></a-entity>
+            <!-- <a-entity id="house-2" material="color:blue" geometry="primitive:box;height:5.5;width:5.5;depth:0.1" position="20 25 -5" rotation="0 70 5 "></a-entity> -->
             <a-entity id="house-3" material="color:green" geometry="primitive:box;height:5.5;width:5.5;depth:0.1" position="-33 21 -6" rotation="0 80 0 "></a-entity>
 
             <a-entity id="house-1-text" text="text: Photosphere house" material="color:purple" position="10 11 6" scale="1.5 1.5 1" rotation="30 -120 0"></a-entity>
@@ -41,10 +41,6 @@
                 <a-ring color="white" radius-inner="0.001" radius-outer="0.5" rotation="90 0 0" position="0 2 0"></a-ring>
                 <a-entity text="text: < Back ;size:0.2;" material="color: #66E1B4" position="-0.35 1.9 0" rotation="90 0 0" scale="0.7 0.7 1"></a-entity>
             </a-entity>
-            <!-- <a-entity three-model="loader: json;
-                             animation: default;
-                             src: url(./assets/housefin.json);">
-            </a-entity> -->
             <a-entity obj-model="obj: #house-obj; mtl: #house-mtl"></a-entity>
             <a-entity geometry="primitive:box;height:100;depth:0.1;width:100" material="color:rgb(116, 99, 96)" position="-2 -3 -1" rotation="90 0 0"></a-entity>
         </a-entity>
@@ -57,7 +53,7 @@
             <a-entity light="type: point; color: #EEE; intensity:0.2"></a-entity>
             <a-entity light="type: point; color: #EEE; intensity:0.2"></a-entity>
         </a-entity>
-        <a-light type="ambient" color="#444"></a-light>
+        <a-light type="ambient" color="#666"></a-light>
         <a-sky id="sky" src="#menu-bg"></a-sky>
     </a-scene>
 
